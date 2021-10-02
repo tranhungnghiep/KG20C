@@ -18,7 +18,7 @@ The knowledge graph was split uniformly at random into the training, validation,
 
 ### Data content
 #### File format
-All files are in tab-separated-values format. For example, train.txt includes "28674CFA	author_in_affiliation	075CFC38", which denotes the author with id 28674CFA works in the affiliation with id 075CFC38. The repo includes these files:
+All files are in tab-separated-values format, compatible with other popular benchmark datasets including WN18RR and FB15K-237. For example, train.txt includes "28674CFA	author_in_affiliation	075CFC38", which denotes the author with id 28674CFA works in the affiliation with id 075CFC38. The repo includes these files:
 - *all_entity_info.txt* contains *id, name, type* of all entities
 - *all_relation_info.txt* contains *id* of all entities
 - *train.txt* contains training triples of the form *entity_1_id, relation_id, entity_2_id*
@@ -28,9 +28,13 @@ All files are in tab-separated-values format. For example, train.txt includes "2
 #### Statistics
 Data statistics of the KG20C knowledge graph:
 
-Author | Paper | Conference | Domain | Affiliation | All entities | All relations | Training triples | Validation triples | Test triples
-:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
-8,680 | 5,047 | 20 | 1,923 | 692 | 16,362 | 5 | 48,213 | 3,670 | 3,724
+Author | Paper | Conference | Domain | Affiliation
+:---: | :---: | :---: | :---: | :---:
+8,680 | 5,047 | 20 | 1,923 | 692
+
+Entities | Relations | Training triples | Validation triples | Test triples
+:---: | :---: | :---: | :---: | :---:
+16,362 | 5 | 48,213 | 3,670 | 3,724
 
 ### License
 The dataset is free to use for research purpose. For other uses, please follow Microsoft Academic Graph license.
@@ -41,7 +45,9 @@ We include the results for link prediction and semantic queries on the KG20C dat
 For more information, please refer to the citations.
 
 ### Link prediction results
-We report results for 4 methods. Random, which is random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CPh and MEI are two recent knowledge graph embedding methods. All models are in small size settings, equivalent to total embedding size 100 (50x2 for Word2vec and SimplE/CPh, 10x10 for MEI).
+We report results for 4 methods. Random, which is random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CPh and MEI are two recent knowledge graph embedding methods. 
+
+All models are in small size settings, equivalent to total embedding size 100 (50x2 for Word2vec and SimplE/CPh, 10x10 for MEI).
 
 Models | MRR | Hit@1 | Hit@3 | Hit@10
 :--- | :---: | :---: | :---: | :---:
