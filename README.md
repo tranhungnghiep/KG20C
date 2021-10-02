@@ -66,7 +66,7 @@ Where may this author work at? | 0.626 | 0.562 | 0.669 | 0.731
 Who may write this paper? | 0.247 | 0.164 | 0.283 | 0.405
 What papers may this author write? | 0.273 | 0.182 | 0.324 | 0.430
 Which papers may cite this paper? | 0.116 | 0.033 | 0.120 | 0.290
-Which papers may this paper cite? | 0.193 | 0.097 | 0.225 | 0.40
+Which papers may this paper cite? | 0.193 | 0.097 | 0.225 | 0.404
 Which papers may belong to this domain? | 0.052 | 0.025 | 0.049 | 0.100
 Which may be the domains of this paper? | 0.189 | 0.114 | 0.206 | 0.333
 Which papers may publish in this conference? | 0.148 | 0.084 | 0.168 | 0.257
