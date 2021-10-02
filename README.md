@@ -1,20 +1,20 @@
-# KG20C: A Scholarly Knowledge Graph Benchmark Dataset
+# KG20C: A scholarly knowledge graph benchmark dataset
 
 ## Introduction
 
-This knowledge graph is constructed to aid research in scholarly data analysis. It can serve as a standard benchmark dataset in scholarly data analysis research for several tasks, including knowledge graph embedding, link prediction, and question answering.
+This knowledge graph is constructed to aid research in scholarly data analysis. It can serve as a standard benchmark dataset in scholarly data analysis research for several tasks, including knowledge graph embedding, link prediction, and question answering about high quality papers from 20 top conferences in computer science.
 
 This has been used for my PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155) and TPDL'19 paper [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). 
 
 ### Construction protocol
 #### Scholarly data
-From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we extracted high quality computer science papers published in top conferences between 1990 and 2010. The top conferences list are based on the [CORE ranking](http://portal.core.edu.au/conf-ranks/) A* conferences. The data was cleaned by removing conferences with less than 300 publications and papers with less than 20 citations. The final list includes 20 top conferences: *AAAI, AAMAS, ACL, CHI, COLT, DCC, EC, FOCS, ICCV, ICDE, ICDM, ICML, ICSE, IJCAI, NIPS, SIGGRAPH, SIGIR, SIGMOD, UAI, and WWW*.
+From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we extracted high quality computer science papers published in top conferences between 1990 and 2010. The top conference list are based on the [CORE ranking](http://portal.core.edu.au/conf-ranks/) A* conferences. The data was cleaned by removing conferences with less than 300 publications and papers with less than 20 citations. The final list includes 20 top conferences: *AAAI, AAMAS, ACL, CHI, COLT, DCC, EC, FOCS, ICCV, ICDE, ICDM, ICML, ICSE, IJCAI, NIPS, SIGGRAPH, SIGIR, SIGMOD, UAI, and WWW*.
 
 #### Knowledge graph
 The scholarly dataset was converted to a knowledge graph by defining the entities, the relations, and constructing the triples. The knowledge graph can be seen as a labeled multi-digraph between scholarly entities, where the edge labels express there relationships between the nodes. We use 5 intrinsic entity types including *Paper, Author, Affiliation, Venue, and Domain*. We also use 5 intrinsic relation types between the entities including *author\_in\_affiliation, author\_write\_paper, paper\_in\_domain, paper\_cite\_paper, and paper\_in\_venue*.
 
 #### Benchmark data splitting
-The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits. This is similar to the construction of the recent benchmark datasets WN18RR and FB15K-237 for link prediction.
+The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, present a difficult benchmark for link prediction similar to WN18RR and FB15K-237.
 
 ### Data content
 #### File format
