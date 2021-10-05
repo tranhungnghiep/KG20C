@@ -76,10 +76,13 @@ Which conferences may this paper publish in? | 0.693 | 0.542 | 0.810 | 0.976
 If you found this dataset or our work useful, please cite us.
 
 For the dataset and semantic query method, please cite:
-- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/1909.08191" target="_blank">Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space</a>. In Proceedings of International Conference on Theory and Practice of Digital Libraries (TPDL), 2019.*
+- *Hung Nghiep Tran and Atsuhiro Takasu. [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). In Proceedings of International Conference on Theory and Practice of Digital Libraries (TPDL), 2019.*
 
 For the MEI knowledge graph embedding model, please cite:
-- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/2006.16365" target="_blank">Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion</a>. In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*
+- *Hung Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*
 
 For the baseline results, please cite:
-- *Hung Nghiep Tran. <a href="https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155" target="_blank">Multi-Relational Embedding for Knowledge Graph Representation and Analysis</a>. PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
+- *Hung Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
+
+For the Microsoft Academic Graph dataset, please cite:
+- *Arnab Sinha, Zhihong Shen, Yang Song, Hao Ma, Darrin Eide, Bo-June (Paul) Hsu, and Kuansan Wang. [An Overview of Microsoft Academic Service (MAS) and Applications](http://dx.doi.org/10.1145/2740908.2742839). In Proceedings of the International Conference on World Wide Web (WWW), 2015.*
