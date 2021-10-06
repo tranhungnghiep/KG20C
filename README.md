@@ -45,19 +45,19 @@ We include the results for link prediction and semantic queries on the KG20C dat
 For more information, please refer to the citations.
 
 ### Link prediction results
-We report results for 4 methods. Random, which is random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CPh and MEI are two recent knowledge graph embedding methods. 
+We report results for 4 methods. Random, which is random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CP<sub>h</sub> and MEI are two recent knowledge graph embedding methods. 
 
-All models are in small size settings, equivalent to total embedding size 100 (50x2 for Word2vec and SimplE/CPh, 10x10 for MEI).
+All models are in small size settings, equivalent to total embedding size 100 (50x2 for Word2vec and SimplE/CP<sub>h</sub>, 10x10 for MEI).
 
 Models | MRR | Hit@1 | Hit@3 | Hit@10
 :--- | :---: | :---: | :---: | :---:
 Random | 0.001 | < 5e-4 | < 5e-4 | < 5e-4
-Word2vec | 0.068 | 0.011 | 0.070 | 0.177
-SimplE/CPh | 0.215 | 0.148 | 0.234 | 0.348
-MEI | **0.230** | **0.157** | **0.258** | **0.368**
+Word2vec (small) | 0.068 | 0.011 | 0.070 | 0.177
+SimplE/CP<sub>h</sub> (small) | 0.215 | 0.148 | 0.234 | 0.348
+MEI (small) | **0.230** | **0.157** | **0.258** | **0.368**
 
 ### Semantic queries results
-The following results demonstrate semantic queries on knowledge graph embedding space, using the above MEI model.
+The following results demonstrate semantic queries on knowledge graph embedding space, using the above MEI (small) model.
 
 Queries | MRR | Hit@1 | Hit@3 | Hit@10
 :--- | :---: | :---: | :---: | :---:
