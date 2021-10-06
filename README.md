@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This knowledge graph is constructed to aid research in scholarly data analysis. It can serve as a standard benchmark dataset in scholarly data analysis research for several tasks, including knowledge graph embedding, link prediction, and question answering about high quality papers from 20 top conferences in computer science.
+This knowledge graph is constructed to aid research in scholarly data analysis. It can serve as a standard benchmark dataset for several tasks, including knowledge graph embedding, link prediction, recommendation systems, and question answering about high quality papers from 20 top computer science conferences.
 
-This has been used for my PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155) and TPDL'19 paper [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). 
+This has been introduced and used in the PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155) and TPDL'19 paper [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). 
 
 ### Construction protocol
 #### Scholarly data
