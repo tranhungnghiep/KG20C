@@ -14,14 +14,14 @@ From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we
 The scholarly dataset was converted to a knowledge graph by defining the entities, the relations, and constructing the triples. The knowledge graph can be seen as a labeled multi-digraph between scholarly entities, where the edge labels express there relationships between the nodes. We use 5 intrinsic entity types including *Paper, Author, Affiliation, Venue, and Domain*. We also use 5 intrinsic relation types between the entities including *author\_in\_affiliation, author\_write\_paper, paper\_in\_domain, paper\_cite\_paper, and paper\_in\_venue*.
 
 #### Benchmark data splitting
-The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, present a difficult benchmark for link prediction similar to WN18RR and FB15K-237.
+The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, constitute a challenging benchmark for link prediction similar to WN18RR and FB15K-237.
 
 ### Data content
 #### File format
 All files are in tab-separated-values format, compatible with other popular benchmark datasets including WN18RR and FB15K-237. For example, train.txt includes "28674CFA	author_in_affiliation	075CFC38", which denotes the author with id 28674CFA works in the affiliation with id 075CFC38. The repo includes these files:
-- *all_entity_info.txt* contains *id, name, type* of all entities
-- *all_relation_info.txt* contains *id* of all entities
-- *train.txt* contains training triples of the form *entity_1_id, relation_id, entity_2_id*
+- *all_entity_info.txt* contains *id  name  type* of all entities
+- *all_relation_info.txt* contains *id* of all relations
+- *train.txt* contains training triples of the form *entity_1_id  relation_id  entity_2_id*
 - *valid.txt* contains validation triples
 - *test.txt* contains test triples
 
@@ -45,7 +45,7 @@ We include the results for link prediction and semantic queries on the KG20C dat
 For more information, please refer to the citations.
 
 ### Link prediction results
-We report results for 4 methods. Random, which is random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CP<sub>h</sub> and MEI are two recent knowledge graph embedding methods. 
+We report results for 4 methods. Random, which is just random guess to show the task difficulty. Word2vec, which is the popular embedding method. SimplE/CP<sub>h</sub> and MEI are two recent knowledge graph embedding methods.
 
 All models are in small size settings, equivalent to total embedding size 100 (50x2 for Word2vec and SimplE/CP<sub>h</sub>, 10x10 for MEI).
 
@@ -81,7 +81,7 @@ For the dataset and semantic query method, please cite:
 For the MEI knowledge graph embedding model, please cite:
 - *Hung Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*
 
-For the baseline results, please cite:
+For the baseline results and extended semantic query method, please cite:
 - *Hung Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
 
 For the Microsoft Academic Graph dataset, please cite:
