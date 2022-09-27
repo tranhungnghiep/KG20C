@@ -39,7 +39,7 @@ Entities | Relations | Training triples | Validation triples | Test triples
 ### License
 The dataset is free to use for research purpose. For other uses, please follow Microsoft Academic Graph license.
 
-## Baselines
+## Baseline results
 We include the results for link prediction and semantic queries on the KG20C dataset. Link prediction is a relational query task given a relation and the head or tail entity to predict the corresponding tail or head entities. Semantic queries include human-friendly query on the scholarly data. MRR is mean reciprocal rank, Hit@k is the percentage of correct predictions at top k. 
 
 For more information, please refer to the citations.
@@ -77,12 +77,52 @@ If you found this dataset or our work useful, please cite us.
 
 For the dataset and semantic query method, please cite:
 - *Hung Nghiep Tran and Atsuhiro Takasu. [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). In Proceedings of International Conference on Theory and Practice of Digital Libraries (TPDL), 2019.*
+  ```
+  @inproceedings{tran_exploringscholarlydata_2019,
+    title = {Exploring {Scholarly} {Data} by {Semantic} {Query} on {Knowledge} {Graph} {Embedding} {Space}},
+    booktitle = {Proceedings of the 23rd {International} {Conference} on {Theory} and {Practice} of {Digital} {Libraries}},
+    author = {Tran, Hung Nghiep and Takasu, Atsuhiro},
+    year = {2019},
+    pages = {154--162},
+    url = {https://arxiv.org/abs/1909.08191},
+  }
+  ```
 
-For the MEI knowledge graph embedding model, please cite:
-- *Hung Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*
+For the MEI and MEIM knowledge graph embedding model, please cite:
+- *Hung Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
+  ```
+  @inproceedings{tran_multipartitionembeddinginteraction_2020,
+    title = {Multi-{Partition} {Embedding} {Interaction} with {Block} {Term} {Format} for {Knowledge} {Graph} {Completion}},
+    booktitle = {Proceedings of the {European} {Conference} on {Artificial} {Intelligence}},
+    author = {Tran, Hung Nghiep and Takasu, Atsuhiro},
+    year = {2020},
+    pages = {833--840},
+    url = {https://arxiv.org/abs/2006.16365},
+  }
+  ```
+- *Hung Nghiep Tran and Atsuhiro Takasu. [MEIM: Multi-partition Embedding Interaction Beyond Block Term Format for Efficient and Expressive Link Prediction](). In Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2022.*  
+  ```
+  @inproceedings{tran_meimmultipartitionembedding_2022,
+    title = {{MEIM}: {Multi}-partition {Embedding} {Interaction} {Beyond} {Block} {Term} {Format} for {Efficient} and {Expressive} {Link} {Prediction}},
+    booktitle = {Proceedings of the {Thirty}-{First} {International} {Joint} {Conference} on {Artificial} {Intelligence}},
+    author = {Tran, Hung Nghiep and Takasu, Atsuhiro},
+    year = {2022},
+    pages = {2262--2269},
+  }
+  ```
 
 For the baseline results and extended semantic query method, please cite:
 - *Hung Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
+  ```
+  @phdthesis{tran_multirelationalembeddingknowledge_2020,
+    address = {Japan},
+    type = {{PhD} {Dissertation}},
+    title = {Multi-{Relational} {Embedding} for {Knowledge} {Graph} {Representation} and {Analysis}},
+    school = {The Graduate University for Advanced Studies, SOKENDAI},
+    author = {Tran, Hung Nghiep},
+    year = {2020},
+  }
+  ```
 
 For the Microsoft Academic Graph dataset, please cite:
 - *Arnab Sinha, Zhihong Shen, Yang Song, Hao Ma, Darrin Eide, Bo-June (Paul) Hsu, and Kuansan Wang. [An Overview of Microsoft Academic Service (MAS) and Applications](http://dx.doi.org/10.1145/2740908.2742839). In Proceedings of the International Conference on World Wide Web (WWW), 2015.*
