@@ -126,3 +126,8 @@ For the baseline results and extended semantic query method, please cite:
 
 For the Microsoft Academic Graph dataset, please cite:
 - *Arnab Sinha, Zhihong Shen, Yang Song, Hao Ma, Darrin Eide, Bo-June (Paul) Hsu, and Kuansan Wang. [An Overview of Microsoft Academic Service (MAS) and Applications](http://dx.doi.org/10.1145/2740908.2742839). In Proceedings of the International Conference on World Wide Web (WWW), 2015.*
+
+## See also
+- AnalyzeKGE, preliminary experiments and analysis: https://github.com/tranhungnghiep/AnalyzeKGE
+- MEI-KGE, Multi-partition Embedding Interaction model: https://github.com/tranhungnghiep/MEI-KGE
+- MEIM-KGE, MEI iMproved beyond block term format: https://github.com/tranhungnghiep/MEIM-KGE
