@@ -16,7 +16,7 @@ The knowledge graph was split uniformly at random into the training, validation,
 
 ## Content of dataset
 <p align="center">
-<img alt="KG20C graph" src="./KG20C_graph.png" height=400px>
+<img alt="KG20C graph" src="./KG20C_graph.png" height=450px>
 <br>
 <i><b>Figure 1:</b> KG20C knowledge graph overview.</i>
 </p>
