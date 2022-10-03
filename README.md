@@ -104,7 +104,7 @@ For the MEI and MEIM knowledge graph embedding models, please cite:
     url = {https://arxiv.org/abs/2006.16365},
   }
   ```
-- *Hung-Nghiep Tran and Atsuhiro Takasu. [MEIM: Multi-partition Embedding Interaction Beyond Block Term Format for Efficient and Expressive Link Prediction](). In Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2022.*  
+- *Hung-Nghiep Tran and Atsuhiro Takasu. [MEIM: Multi-partition Embedding Interaction Beyond Block Term Format for Efficient and Expressive Link Prediction](https://arxiv.org/abs/2209.15597). In Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2022.*  
   ```
   @inproceedings{tran_meimmultipartitionembedding_2022,
     title = {{MEIM}: {Multi}-partition {Embedding} {Interaction} {Beyond} {Block} {Term} {Format} for {Efficient} and {Expressive} {Link} {Prediction}},
@@ -112,6 +112,7 @@ For the MEI and MEIM knowledge graph embedding models, please cite:
     author = {Tran, Hung-Nghiep and Takasu, Atsuhiro},
     year = {2022},
     pages = {2262--2269},
+    url = {https://arxiv.org/abs/2209.15597},
   }
   ```
 
