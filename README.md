@@ -135,4 +135,3 @@ For the Microsoft Academic Graph dataset, please cite:
 ## See also
 - AnalyzeKGE, preliminary experiments and analysis: https://github.com/tranhungnghiep/AnalyzeKGE
 - MEI-KGE, Multi-partition Embedding Interaction model: https://github.com/tranhungnghiep/MEI-KGE
-- MEIM-KGE, MEI iMproved beyond block term format: https://github.com/tranhungnghiep/MEIM-KGE
