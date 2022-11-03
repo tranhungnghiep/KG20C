@@ -10,13 +10,13 @@ This has been introduced and used in the TPDL'19 paper [Exploring Scholarly Data
 </p>
 
 ## Construction protocol
-### Scholarly data
+### Scholarly data extraction
 From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we extracted high quality computer science papers published in top conferences between 1990 and 2010. The top conference list are based on A* conferences in the [CORE ranking](http://portal.core.edu.au/conf-ranks/) version 2020. The data was cleaned by removing conferences with less than 300 publications and papers with less than 20 citations. The final list includes 20 top conferences (in alphabetical order): *AAAI, AAMAS, ACL, CHI, COLT, DCC, EC, FOCS, ICCV, ICDE, ICDM, ICML, ICSE, IJCAI, NIPS, SIGGRAPH, SIGIR, SIGMOD, UAI, and WWW*.
 
-### Knowledge graph
+### Knowledge graph construction
 From the scholarly data, we define the entities, the relations, and construct the triples. The knowledge graph can be seen as a labeled multi-digraph between scholarly entities, with edge labels expressing the relationships between the nodes. We use 5 intrinsic entity types including *Paper, Author, Affiliation, Venue, and Domain*. We also use 5 intrinsic relation types between the entities including *author\_in\_affiliation, author\_write\_paper, paper\_in\_domain, paper\_cite\_paper, and paper\_in\_venue*.
 
-### Data splitting for benchmark
+### Benchmark data splitting
 The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, KG20C constitutes a challenging benchmark for link prediction similar to WN18RR and FB15K-237.
 
 ## Content of dataset
