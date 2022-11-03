@@ -92,6 +92,19 @@ For the dataset and semantic query method, please cite:
   }
   ```
 
+For the extended semantic query method and baseline results, please cite:
+- *Hung-Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
+  ```
+  @phdthesis{tran_multirelationalembeddingknowledge_2020,
+    address = {Japan},
+    type = {{PhD} {Dissertation}},
+    title = {Multi-{Relational} {Embedding} for {Knowledge} {Graph} {Representation} and {Analysis}},
+    school = {The Graduate University for Advanced Studies, SOKENDAI},
+    author = {Tran, Hung-Nghiep},
+    year = {2020},
+  }
+  ```
+
 For the MEI and MEIM knowledge graph embedding models, please cite:
 - *Hung-Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
   ```
@@ -113,19 +126,6 @@ For the MEI and MEIM knowledge graph embedding models, please cite:
     year = {2022},
     pages = {2262--2269},
     url = {https://arxiv.org/abs/2209.15597},
-  }
-  ```
-
-For the baseline results and extended semantic query method, please cite:
-- *Hung-Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
-  ```
-  @phdthesis{tran_multirelationalembeddingknowledge_2020,
-    address = {Japan},
-    type = {{PhD} {Dissertation}},
-    title = {Multi-{Relational} {Embedding} for {Knowledge} {Graph} {Representation} and {Analysis}},
-    school = {The Graduate University for Advanced Studies, SOKENDAI},
-    author = {Tran, Hung-Nghiep},
-    year = {2020},
   }
   ```
 
