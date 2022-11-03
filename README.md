@@ -1,28 +1,29 @@
 # KG20C: A scholarly knowledge graph benchmark dataset
-
-This knowledge graph is constructed to aid research in scholarly data analysis. It can serve as a standard benchmark dataset for several tasks, including knowledge graph embedding, link prediction, recommendation systems, and question answering about high quality papers from 20 top computer science conferences.
+To facilitate research in scholarly data analysis, we constructed the KG20C knowledge graph using data from 20 top computer science conferences. It can serve as a standard benchmark dataset for several tasks, including knowledge graph embedding, link prediction, recommendation systems, and question answering about high quality papers. 
 
 This has been introduced and used in the TPDL'19 paper [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191) and the PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). 
 
-## Construction protocol
-### Scholarly data
-From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we extracted high quality computer science papers published in top conferences between 1990 and 2010. The top conference list are based on the [CORE ranking](http://portal.core.edu.au/conf-ranks/) A* conferences. The data was cleaned by removing conferences with less than 300 publications and papers with less than 20 citations. The final list includes 20 top conferences: *AAAI, AAMAS, ACL, CHI, COLT, DCC, EC, FOCS, ICCV, ICDE, ICDM, ICML, ICSE, IJCAI, NIPS, SIGGRAPH, SIGIR, SIGMOD, UAI, and WWW*.
-
-### Knowledge graph
-The scholarly dataset was converted to a knowledge graph by defining the entities, the relations, and constructing the triples. The knowledge graph can be seen as a labeled multi-digraph between scholarly entities, where the edge labels express there relationships between the nodes. We use 5 intrinsic entity types including *Paper, Author, Affiliation, Venue, and Domain*. We also use 5 intrinsic relation types between the entities including *author\_in\_affiliation, author\_write\_paper, paper\_in\_domain, paper\_cite\_paper, and paper\_in\_venue*.
-
-### Data splitting for benchmark
-The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, constitute a challenging benchmark for link prediction similar to WN18RR and FB15K-237.
-
-## Content of dataset
 <p align="center">
-<img alt="KG20C graph" src="./KG20C_graph.png" height=450px>
+<img alt="KG20C graph" src="./KG20C_graph.png" width=500px>
 <br>
-<i><b>Figure 1:</b> KG20C knowledge graph overview.</i>
+<i><b>Figure 1:</b> Overview of the KG20C knowledge graph.</i>
 </p>
 
+## Construction protocol
+### Scholarly data
+From the [Microsoft Academic Graph](https://academic.microsoft.com/) dataset, we extracted high quality computer science papers published in top conferences between 1990 and 2010. The top conference list are based on A* conferences in the [CORE ranking](http://portal.core.edu.au/conf-ranks/) version 2020. The data was cleaned by removing conferences with less than 300 publications and papers with less than 20 citations. The final list includes 20 top conferences (in alphabetical order): *AAAI, AAMAS, ACL, CHI, COLT, DCC, EC, FOCS, ICCV, ICDE, ICDM, ICML, ICSE, IJCAI, NIPS, SIGGRAPH, SIGIR, SIGMOD, UAI, and WWW*.
+
+### Knowledge graph
+From the scholarly data, we define the entities, the relations, and construct the triples. The knowledge graph can be seen as a labeled multi-digraph between scholarly entities, with edge labels expressing the relationships between the nodes. We use 5 intrinsic entity types including *Paper, Author, Affiliation, Venue, and Domain*. We also use 5 intrinsic relation types between the entities including *author\_in\_affiliation, author\_write\_paper, paper\_in\_domain, paper\_cite\_paper, and paper\_in\_venue*.
+
+### Data splitting for benchmark
+The knowledge graph was split uniformly at random into the training, validation, and test sets. We made sure that all entities and relations in the validation and test sets also appear in the training set so that their embeddings can be learned. We also made sure that there is no data leakage and no redundant triples in these splits, thus, KG20C constitutes a challenging benchmark for link prediction similar to WN18RR and FB15K-237.
+
+## Content of dataset
 ### File format
-All files are in tab-separated-values format, compatible with other popular benchmark datasets including WN18RR and FB15K-237. For example, train.txt includes "28674CFA	author_in_affiliation	075CFC38", which denotes the author with id 28674CFA works in the affiliation with id 075CFC38. The repo includes these files:
+All files are in tab-separated-values format, compatible with other popular benchmark datasets including WN18RR and FB15K-237. For example, *train.txt* includes "*28674CFA	author_in_affiliation	075CFC38*", which denotes the author with id *28674CFA* works in the affiliation with id *075CFC38*. 
+
+The repo includes these files:
 - *all_entity_info.txt* contains *id  name  type* of all entities
 - *all_relation_info.txt* contains *id* of all relations
 - *train.txt* contains training triples of the form *entity_1_id  relation_id  entity_2_id*
