@@ -1,7 +1,7 @@
 # KG20C: A scholarly knowledge graph benchmark dataset
 To facilitate research in scholarly data analysis, we constructed the KG20C knowledge graph using data from 20 top computer science conferences. It can serve as a standard benchmark dataset for several tasks, including knowledge graph embedding, link prediction, recommendation systems, and question answering about high quality papers. 
 
-This has been introduced and used in the TPDL'19 paper [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191) and the PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). 
+This has been preliminarily introduced and used in the PhD thesis [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). 
 
 <p align="center">
 <img alt="KG20C graph" src="./KG20C_graph.png" width=500px>
@@ -80,20 +80,7 @@ Which conferences may this paper publish in? | 0.693 | 0.542 | 0.810 | 0.976
 ## How to cite
 If you found this dataset or our work useful, please cite us.
 
-For the dataset and semantic query method, please cite:
-- *Hung-Nghiep Tran and Atsuhiro Takasu. [Exploring Scholarly Data by Semantic Query on Knowledge Graph Embedding Space](https://arxiv.org/abs/1909.08191). In Proceedings of International Conference on Theory and Practice of Digital Libraries (TPDL), 2019.*
-  ```
-  @inproceedings{tran_exploringscholarlydata_2019,
-    title = {Exploring {Scholarly} {Data} by {Semantic} {Query} on {Knowledge} {Graph} {Embedding} {Space}},
-    booktitle = {Proceedings of the 23rd {International} {Conference} on {Theory} and {Practice} of {Digital} {Libraries}},
-    author = {Tran, Hung-Nghiep and Takasu, Atsuhiro},
-    year = {2019},
-    pages = {154--162},
-    url = {https://arxiv.org/abs/1909.08191},
-  }
-  ```
-
-For the extended semantic query method and baseline results, please cite:
+For the primilinary data and semantic query method, please cite the thesis:
 - *Hung-Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
   ```
   @phdthesis{tran_multirelationalembeddingknowledge_2020,
@@ -106,7 +93,7 @@ For the extended semantic query method and baseline results, please cite:
   }
   ```
 
-For the MEI and MEIM knowledge graph embedding models, please cite:
+For the MEI and MEIM baseline knowledge graph embedding models, please cite:
 - *Hung-Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
   ```
   @inproceedings{tran_multipartitionembeddinginteraction_2020,
@@ -130,7 +117,7 @@ For the MEI and MEIM knowledge graph embedding models, please cite:
   }
   ```
 
-For the Microsoft Academic Graph dataset, please cite:
+For the raw Microsoft Academic Graph dataset, please cite:
 - *Arnab Sinha, Zhihong Shen, Yang Song, Hao Ma, Darrin Eide, Bo-June (Paul) Hsu, and Kuansan Wang. [An Overview of Microsoft Academic Service (MAS) and Applications](http://dx.doi.org/10.1145/2740908.2742839). In Proceedings of the International Conference on World Wide Web (WWW), 2015.*
 
 ## See also
