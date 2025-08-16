@@ -3,12 +3,13 @@ KG20C is a curated knowledge graph built from the Microsoft Academic Graph (MAG)
 
 Note: This repository provides the dataset files and basic usage instructions.
 A complete description of the dataset construction, schema, and evaluation baselines will appear in our forthcoming peer-reviewed publication.
-
+<!--
 <p align="center">
 <img alt="KG20C graph" src="./KG20C_graph.png" width=500px>
 <br>
 <i><b>Figure 1:</b> Overview of the KG20C knowledge graph.</i>
 </p>
+-->
 
 ## Dataset contents
 ### File format
