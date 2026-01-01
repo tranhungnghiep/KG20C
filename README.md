@@ -1,5 +1,5 @@
 # KG20C: A scholarly knowledge graph benchmark dataset
-KG20C is a curated knowledge graph built from the Microsoft Academic Graph (MAG) to support research on scholarly metadata — such as authors, papers, venues, affiliations, and citations. It has been designed for reproducible benchmarking in tasks including link prediction, recommendation, and question answering on scholarly data.
+KG20C is a curated knowledge graph built from the Microsoft Academic Graph (MAG) to support research on scholarly metadata, such as authors, papers, venues, affiliations, and citations. It has been designed for reproducible benchmarking in tasks including link prediction, recommendation, and question answering on scholarly data.
 
 Note: This repository provides the dataset files and basic usage instructions.
 A complete description of the dataset construction, schema, and evaluation baselines will appear in our forthcoming peer-reviewed publication.
@@ -40,7 +40,7 @@ The dataset is free to use for research purpose. For other uses, please follow M
 If you found the datasets or our work useful, please cite us.
 
 For the KG20C & KG20C-QA datasets, please cite:
-- *Hung-Nghiep Tran and Atsuhiro Takasu. [KG20C & KG20C-QA: Scholarly Knowledge Graph Benchmarks for Link Prediction and Question Answering](https://arxiv.org/abs/2512.21799). Dec. 25, 2025, arXiv: arXiv:2512.21799. doi: 10.48550/arXiv.2512.21799.*  
+- *Hung-Nghiep Tran and Atsuhiro Takasu. [KG20C & KG20C-QA: Scholarly Knowledge Graph Benchmarks for Link Prediction and Question Answering](https://arxiv.org/abs/2512.21799). arXiv: arXiv:2512.21799v2, 2025. doi: 10.48550/arXiv.2512.21799.*  
   ```
   @misc{tran_kg20ckg20cqascholarly_2025,
     title = {{{KG20C}} \& {{KG20C-QA}}: {{Scholarly Knowledge Graph Benchmarks}} for {{Link Prediction}} and {{Question Answering}}},
@@ -53,7 +53,7 @@ For the KG20C & KG20C-QA datasets, please cite:
   }
   ```
 
-For the primilinary data and semantic query method, please cite the thesis:
+For the primilinary results and semantic query method, please cite the thesis:
 - *Hung-Nghiep Tran. [Multi-Relational Embedding for Knowledge Graph Representation and Analysis](https://ir.soken.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=6334&item_no=1&page_id=29&block_id=155). PhD Dissertation, The Graduate University for Advanced Studies, SOKENDAI, Japan, 2020.*  
   ```
   @phdthesis{tran_multirelationalembeddingknowledge_2020,
